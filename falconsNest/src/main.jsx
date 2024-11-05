@@ -37,6 +37,16 @@ const router = createBrowserRouter([{
   path:"/blog",
   element:<SpecificBlog/>,
   errorElement:<ErrorPage/>
+},
+{
+  path:"/blog/:id",
+  element:<SpecificBlog />,
+  errorElement:<ErrorPage/>
+},
+{
+  path:"*",
+  element:<ErrorPage/>,
+  errorElement:<ErrorPage/>
 }])
 createRoot(document.getElementById('root')).render(
   <StrictMode>
