@@ -60,7 +60,7 @@ export default function SpecificBlog(props){
     },[])
     useEffect( ()=>{
         const loadBlog = async ()=>{
-            const response = await axios.get(`https://blogbackendapi-ancient-sea-3487.fly.dev/api/blog/${id}`)
+            const response = await axios.get(`https://backendblogapi-b563b8bcb606.herokuapp.com/api/blog/${id}`)
             setBlog(response.data.blog)      
         }
         loadBlog()
